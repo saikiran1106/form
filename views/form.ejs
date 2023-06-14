@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Aesthetic Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <button class="fill-form-btn" onclick="openPopup()">Fill Form</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <form class="form-container" action="/submit" method="POST">
+                <h2>Fill the Form</h2>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="tel" placeholder="Mobile" name="mobile" required>
+                <input type="text" placeholder="Location" name="location" required>
+                <input type="number" placeholder="Amount of Donation (in Rupees)" name="amount" required>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

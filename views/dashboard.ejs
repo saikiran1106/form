@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Dashboard</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Location</th>
+            <th>Amount</th>
+        </tr>
+        <% data.forEach((row)=> { %>
+            <tr>
+                <td> <%= row.id %> </td>
+                <td>
+                    <%= row.name %>
+                </td>
+                <td>
+                    <%= row.email %>
+                </td>
+                <td>
+                    <%= row.mobile %>
+                </td>
+                <td>
+                    <%= row.location %>
+                </td>
+                <td>
+                    <%= row.amount %>
+                </td>
+            </tr>
+            <% }); %>
+    </table>
+</body>
+
+</html>
+
+<style>
+    table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+</style>
